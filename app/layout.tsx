@@ -7,6 +7,9 @@ import { AppSidebar } from "@/components/app-sidebar"
 import { Menu } from "lucide-react";
 import CustomTrigger from "@/components/ui/CustomTrigger";
 import Footer from "@/components/Footer";
+import FirstSection from "@/components/FirstSection";
+import Sidebar from "@/components/Sidebar";
+import SecondSection from "@/components/SecondSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,16 +38,12 @@ export default function RootLayout({
       >
         <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
           <Navbar />
-          <SidebarProvider>
-            <AppSidebar />
-            <main>
-              <CustomTrigger />
-              {children}
-            </main>
-          </SidebarProvider>
           {children}
         </div>
+        <FirstSection />
+        <SecondSection />
         <Footer />
+        <Sidebar />
       </body>
     </html>
   );
