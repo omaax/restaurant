@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Navbar = ( )=>  {
   return (
-    <div className="my-5">
+    <div className="m-4">
       <Image src="/logo.png" alt="logo" width={64} height={46}/>
     </div>
   )

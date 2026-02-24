@@ -18,7 +18,7 @@ const SecondSection = () => {
         <div className='w-170 z-10 pl-100 pt-10'>
           <h1 className='text-4xl '>Delicious Baking. Exceptional Quality.</h1>
         </div>
-        <div className='bg-gray-100 absolute mt-30 h-[480px] w-full' />
+        <div className='bg-gray-100 absolute mt-30 h-[500px] w-full' />
         <div className='max-w-6xl mx-auto grid grid-cols-2'>
           <div className="mt-40 z-10">
             <img

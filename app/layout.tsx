@@ -38,24 +38,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
-          <Navbar />
-          {children}
-        </div>
-        <FirstSection />
-        <SecondSection />
-        <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
-          <ThirdSection />
-        </div>
-        <OurMission />
-        <ForthSection />
-        <FifthٍSection />
-        <ContactUs />
-        <Footer />
-        <Sidebar />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <SidebarProvider>
+          <AppSidebar  /> 
+          <main className="w-full flex-1 overflow-hidden">
+            <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+              <CustomTrigger />
+              <Navbar />
+              {children}
+            </div>
+            <FirstSection />
+            <SecondSection />
+            <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+              <ThirdSection />
+            </div>
+            <OurMission />
+            <ForthSection />
+            <FifthٍSection />
+            <ContactUs />
+            <Footer />
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );
