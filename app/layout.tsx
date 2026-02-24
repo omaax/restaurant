@@ -10,6 +10,11 @@ import Footer from "@/components/Footer";
 import FirstSection from "@/components/FirstSection";
 import Sidebar from "@/components/Sidebar";
 import SecondSection from "@/components/SecondSection";
+import ThirdSection from "@/components/ThirdSection";
+import OurMission from "@/components/OurMission";
+import ForthSection from "@/components/ForthSection";
+import FifthٍSection from "@/components/FifthٍSection";
+import ContactUs from "@/components/ContactUs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +47,13 @@ export default function RootLayout({
         </div>
         <FirstSection />
         <SecondSection />
+        <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+          <ThirdSection />
+        </div>
+        <OurMission />
+        <ForthSection />
+        <FifthٍSection />
+        <ContactUs />
         <Footer />
         <Sidebar />
       </body>

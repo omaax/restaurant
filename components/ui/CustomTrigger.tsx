@@ -8,8 +8,8 @@ function CustomTrigger() {
     const { open, setOpen } = useSidebar()
   return (
     <div>
-      <Button variant="secondary" className="fixed top-4 right-50 bg-transparent" onClick={() => setOpen(!open)}>
-        <Menu className="" />
+      <Button size="icon" className="fixed text-black hover:text-yellow-600 top-6 right-50 bg-transparent hover:bg-transparent" onClick={() => setOpen(!open)}>
+        <Menu className="h-10 w-10"/>
       </Button>
     </div>
   )
