@@ -13,22 +13,20 @@ const ContactUs = () => {
                 <label className="font-sans" htmlFor="name">Name</label>
                 <input className="bg-white border-gray-400 border rounded-4xl p-2.5 ml-8 w-75" type="text" id="name"/>
             </form> */}
-            <div className="">
-            <FieldGroup className="grid max-w-sm grid-cols-2 ">
-                <Field>
-                    <FieldLabel className="text-md" htmlFor="email">Email</FieldLabel>
-                    <Input className="bg-white rounded-4xl px-40 py-5" id="email" placeholder="Email" />
-                </Field>
-                <Field>
-                    <FieldLabel className="ml-35 text-md" htmlFor="name">Name</FieldLabel>
-                    <Input className="bg-white rounded-4xl px-40 py-5 ml-35" id="name" placeholder="Name" />
-                </Field>
-                    {/* <button className='bg-black hover:bg-[#161616] text-white rounded-full font-bold h-[50] w-[600] my-10 cursor-pointer'>SUBMIT</button> */}
-                <Field className="flex items-center justify-center" orientation="horizontal">
-                    <Button className="uppercase mt-5 py-6 px-77 ml-122 font-bold font-sans tracking-widest text-md rounded-full" type="submit">Submit</Button>
-                </Field>
-            </FieldGroup>
-            </div>
+                <FieldGroup className="grid grid-cols-2 gap-6 max-w-3xl w-full">
+                    <Field>
+                        <FieldLabel className="text-md" htmlFor="email">Email</FieldLabel>
+                        <Input className="bg-white rounded-4xl w-full px-3 py-6" id="email" placeholder="Email" />
+                    </Field>
+                    <Field>
+                        <FieldLabel className="text-md" htmlFor="name">Name</FieldLabel>
+                        <Input className="bg-white rounded-4xl w-full px-6 py-6" id="name" placeholder="Name" />
+                    </Field>
+                        {/* <button className='bg-black hover:bg-[#161616] text-white rounded-full font-bold h-[50] w-[600] my-10 cursor-pointer'>SUBMIT</button> */}
+                    <Field className="flex items-center justify-center" orientation="horizontal">
+                        <Button className="uppercase mt-5 py-6 px-75 ml-85 font-bold font-sans tracking-widest text-md rounded-full" type="submit">Submit</Button>
+                    </Field>
+                </FieldGroup>
             <div className="grid grid-cols-3 gap-8 mt-20">
                 <div className="place-items-center">
                     <h1 className="uppercase font-bold text-2xl">F​ind Us</h1>

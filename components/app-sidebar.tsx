@@ -30,7 +30,7 @@ export function AppSidebar() {
   } = useSidebar()
 
   return (
-    <div className="fixed">
+    <div className="fixed z-100">
       <Sidebar className="text-white">
         <SidebarHeader>
           <SidebarMenu>

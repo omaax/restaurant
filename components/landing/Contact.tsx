@@ -1,11 +1,11 @@
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
-import { Button } from "../../components/ui/button"
+import { Button } from "../ui/button"
+import { Field, FieldGroup, FieldLabel } from "../ui/field"
+import { Input } from "../ui/input"
 
 const Contact = () => {
   return (
     <div className="relative">
-        <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute z-10 top-1/2 left-3/5 -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-6xl mb-20 text-center">Contact Us</h1>
             {/* <form action="submit" className="flex itmes-center justify-center">
                 <label className="font-sans" htmlFor="email">Email</label>
@@ -46,7 +46,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <div className='bg-[url(/S7.jpg)] h-[840px] bg-no-repeat bg-cover bg-center brightness-90' />
+        <div className='bg-[url(/contact.jpg)] h-[840px] bg-no-repeat bg-cover bg-center' />
     </div>
   )
 }
