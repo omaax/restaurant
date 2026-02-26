@@ -41,18 +41,20 @@ export function AppSidebar() {
                 {/* <SidebarMenuBadge>
                   <X className="text-white cursor-pointer"/>
                 </SidebarMenuBadge> */}
-              <SidebarMenuButton asChild>
-                <a href="/">Home</a>
-              </SidebarMenuButton>
-              <SidebarMenuButton asChild >
-                <a href="/about">About Us</a>
-              </SidebarMenuButton>
-              <SidebarMenuButton asChild>
-                <a href="#">Menu</a>
-              </SidebarMenuButton>
-              <SidebarMenuButton asChild>
-                <a href="#">Landing</a>
-              </SidebarMenuButton>
+              <div className="">
+                <SidebarMenuButton asChild>
+                  <a href="/">Home</a>
+                </SidebarMenuButton>
+                <SidebarMenuButton asChild >
+                  <a href="/about">About Us</a>
+                </SidebarMenuButton>
+                <SidebarMenuButton asChild>
+                  <a href="/menu">Menu</a>
+                </SidebarMenuButton>
+                <SidebarMenuButton asChild>
+                  <a href="/landing">Landing</a>
+                </SidebarMenuButton>
+              </div>
             </SidebarMenuItem>
           </SidebarMenu>
         </SidebarHeader>
