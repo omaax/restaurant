@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Button } from './ui/button'
+import { Button } from '../../components/ui/button'
 
 const FirstSection = () => {
   return (
@@ -14,7 +14,7 @@ const FirstSection = () => {
             <p className=''>Flour, water, sea salt, and leavening: four simple ingredients that—when mixed, shaped, fermented, and baked—make one of the most basic foods that has nourished humans for thousands of years. Since such few ingredients are involved, two things set great bread apart: quality ingredients and time.</p>
         </div>
         <button className='bg-transparent hover:bg-black hover:text-white rounded-full border border-black font-bold h-[55] w-[200]'>READ MORE</button>
-     </div>
+      </div>
     </div>
   )
 }

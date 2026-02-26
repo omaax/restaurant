@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/ui/Navbar";
+import Navbar from "@/components/Navbar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
 import { Menu } from "lucide-react";
 import CustomTrigger from "@/components/ui/CustomTrigger";
 import Footer from "@/components/Footer";
-import FirstSection from "@/components/FirstSection";
-import Sidebar from "@/components/Sidebar";
-import SecondSection from "@/components/SecondSection";
-import ThirdSection from "@/components/ThirdSection";
-import OurMission from "@/components/OurMission";
-import ForthSection from "@/components/ForthSection";
-import FifthٍSection from "@/components/FifthٍSection";
-import ContactUs from "@/components/ContactUs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,22 +32,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SidebarProvider>
-          <AppSidebar  /> 
+        <AppSidebar  />
           <main className="w-full flex-1 overflow-hidden">
             <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
               <CustomTrigger />
               <Navbar />
-              {children}
             </div>
-            <FirstSection />
-            <SecondSection />
-            <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
-              <ThirdSection />
-            </div>
-            <OurMission />
-            <ForthSection />
-            <FifthٍSection />
-            <ContactUs />
+            {children}
             <Footer />
           </main>
         </SidebarProvider>

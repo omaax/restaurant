@@ -42,10 +42,10 @@ export function AppSidebar() {
                   <X className="text-white cursor-pointer"/>
                 </SidebarMenuBadge> */}
               <SidebarMenuButton asChild>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </SidebarMenuButton>
               <SidebarMenuButton asChild >
-                <a href="#">About Us</a>
+                <a href="/about">About Us</a>
               </SidebarMenuButton>
               <SidebarMenuButton asChild>
                 <a href="#">Menu</a>
