@@ -15,21 +15,22 @@ const SecondSection = () => {
     //   </div>
     // </div>
       <div className="relative">
-        <div className='w-170 z-10 pl-100 pt-10'>
-          <h1 className='text-4xl '>Delicious Baking. Exceptional Quality.</h1>
+        <div className='w-70 sm:w-190 p-0 sm:pl-100 pt-10 ml-12'>
+          <h1 className='text-5xl '>Delicious Baking. Exceptional Quality.</h1>
         </div>
-        <div className='bg-gray-100 absolute mt-30 h-[500px] w-full' />
-        <div className='max-w-6xl mx-auto grid grid-cols-2'>
+        {/* IMAGES */}
+        <div className='bg-gray-100 absolute mt-60 sm:mt-30 h-[700px] sm:h-[500px] w-full' />
+        <div className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2'>
           <div className="mt-40 z-10">
             <img
               src="/breadperson.jpg"
-              className="h-[511px] w-[422px] object-cover "
+              className="m-auto h-[400px] sm:h-[511px] sm:w-[422px] object-cover"
             />
           </div>
           <div className='z-10'>
             <img
               src="/bread2.jpg"
-              className="h-[623px] w-[422px] object-cover"
+              className="sm:mx-0 mx-auto sm:mt-0 mt-10 h-[470px] w-92 sm:h-[623px] sm:w-[422px] object-cover"
             />
           </div>
         </div>

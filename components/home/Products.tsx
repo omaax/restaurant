@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Products = () => {
   return (
-    <div className='bg-[url(/g-min.jpg)] bg-cover bg-center h-[900px]'>
+    <div className='bg-[url(/g-min.jpg)] bg-cover bg-center h-full pb-30'>
         {/* <Image src="/g-min.jpg" alt="" width={36} height={36} /> */}
         <div>
             <h1 className="text-white text-6xl text-center pt-20">Our Breads</h1>

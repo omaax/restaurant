@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <div className='bg-[url(/about.jpg)] bg-cover h-[970px] flex flex-col items-center '>
+    <div className='bg-[url(/about.jpg)] bg-cover bg-center h-full pb-15 flex flex-col items-center '>
         <h1 className="text-white text-6xl font-sans my-15">Our ​Bread</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             <div className="bg-black/60 max-w-sm px-7 m-5 rounded-3xl ">

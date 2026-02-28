@@ -5,7 +5,7 @@ const Organic = () => {
   return (
     <div className='bg-gray-200 pb-10'>
         <div>
-            <h1 className="text-black text-6xl text-center pt-20">Organic ​Breads</h1>
+            <h1 className="text-black text-3xl md:text-6xl text-center pt-20">Organic ​Breads</h1>
             <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-5 mt-10">
                 <div className="bg-white w-[250px] p-4 text-center">
                     <Image className="w-[227px] h-[195px]" src="/bread/whiteBread.jpg" alt="" width={227} height={195} />

@@ -7,6 +7,7 @@ import { AppSidebar } from "@/components/app-sidebar"
 import { Menu } from "lucide-react";
 import CustomTrigger from "@/components/ui/CustomTrigger";
 import Footer from "@/components/Footer";
+import SidebarOverlay from "@/components/ui/SidebarOverlay";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,13 +32,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <SidebarProvider>
-        <AppSidebar  />
-          <main className="w-full flex-1 overflow-hidden">
-            <div className="p-2 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
-              <CustomTrigger />
+        <SidebarProvider defaultOpen={false}>
+          <AppSidebar  />
+          <main className="w-full overflow-hidden ">
+            <div className="sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+              {/* <CustomTrigger /> */}
               <Navbar />
             </div>
+            {/* <SidebarTrigger /> */}
             {children}
             <Footer />
           </main>
