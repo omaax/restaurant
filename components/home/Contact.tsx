@@ -7,12 +7,6 @@ const Contact = () => {
     <div className="relative">
         <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-4xl sm:text-6xl mb-10 text-center">Contact Us</h1>
-            {/* <form action="submit" className="flex itmes-center justify-center">
-                <label className="font-sans" htmlFor="email">Email</label>
-                <input className="bg-white border-gray-400 border rounded-4xl p-2.5 ml-8 w-75" type="text" id="email"/>
-                <label className="font-sans" htmlFor="name">Name</label>
-                <input className="bg-white border-gray-400 border rounded-4xl p-2.5 ml-8 w-75" type="text" id="name"/>
-            </form> */}
                 <FieldGroup className="grid grid-cols-1 sm:grid-cols-2">
                     <Field>
                         <FieldLabel className="text-md" htmlFor="email">Email</FieldLabel>

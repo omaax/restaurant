@@ -1,8 +1,8 @@
 const DeliciousBaking = () => {
   return (
     <div className='bg-[#f2f2f2] place-items-center'>
-        <h1 className="text-6xl py-15">Delicious Baking</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-300 pl-10 pb-30">
+        <h1 className="text-4xl sm:text-6xl py-15">Delicious Baking</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pl-10 pb-30">
             <div className="flex items-center justify-start">
                 <img className="w-[65px] mb-20 mr-10" src="//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/80fec7903aa257c583e3dc80/3014502.png" alt="" />
                 <div className="">

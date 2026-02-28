@@ -1,5 +1,5 @@
+import Contact from '@/components/home/Contact'
 import About from '@/components/landing/About'
-import Contact from '@/components/landing/Contact'
 import DeliciousBaking from '@/components/landing/DeliciousBaking'
 import Items from '@/components/landing/Items'
 import Landing from '@/components/landing/Landing'

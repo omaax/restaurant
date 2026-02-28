@@ -1,4 +1,4 @@
-import ContactUs from "../../components/about/ContactUs"
+import Contact from "@/components/home/Contact"
 import FifthٍSection from "../../components/about/FifthٍSection"
 import FirstSection from "../../components/about/FirstSection"
 import ForthSection from "../../components/about/ForthSection"
@@ -17,7 +17,7 @@ const Page = () => {
             <OurMission />
             <ForthSection />
             <FifthٍSection />
-            <ContactUs />
+            <Contact />
     </div>
   )
 }

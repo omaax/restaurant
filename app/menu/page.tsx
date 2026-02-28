@@ -1,4 +1,4 @@
-import ContactUs from '@/components/about/ContactUs'
+import Contact from '@/components/home/Contact'
 import Brownies from '@/components/menu/Brownies'
 import Hero from '@/components/menu/Hero'
 import Organic from '@/components/menu/Organic'
@@ -10,7 +10,7 @@ const page = () => {
       <Hero />
       <Organic />
       <Brownies />
-      <ContactUs />
+      <Contact />
     </div>
   )
 }
